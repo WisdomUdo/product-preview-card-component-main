@@ -111,9 +111,9 @@ body{
     }
 
     .image-section img{
-        width: 70%;
-        max-height: 200px; /* Reduce height for smaller screens */
-        border-radius: 10px;
+        width: 100%;
+        max-height: 300px; 
+        border-radius: 20px;
         padding: 10px;
         margin-top: 15px;
     }
@@ -158,8 +158,9 @@ body{
     }
 
     .image-section img {
-        width: 60%;
+        width: 80%;
         max-height: 180px;
+        border-radius: 20px;
     }
 
     .content-section {

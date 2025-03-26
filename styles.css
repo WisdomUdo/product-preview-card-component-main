@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width:500px;
+    box-shadow: 0 4px 10px hsl(212, 21%, 14%);
+}
+
+.image-section{
+    flex: 1;
+}
+
+.image-section img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.content-section{
+    flex: 1;
+    padding: 20px;
+}
+
+.category{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 10px;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    color:hsl(212, 21%, 14%);
+    margin-bottom: 25px;
+}
+
+.description{
+    font-size: 14px;
+    color:hsl(228, 12%, 48%);
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color:hsl(158, 36%, 37%);
+    margin-bottom: 20px;
+}
+
+.original-price{
+    font-size: 14px;
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.discount-price{
+    font-size: 40px;
+}
+.add-to-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(158, 42%, 18%);
+    color:hsl(0, 0%, 100%);
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.add-to-cart span{
+    margin-right: 7px;
+}
+
+.add-to-cart:hover{
+    background-color:hsl(158, 36%, 37%);
+}
+
+@media (max-width:600px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section img{
+        border-radius: 20px;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .content-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+        text-align:left;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discount-price {
+        font-size: 36px;
+    }
+
+    .original-price {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width:375px) {
+    .card {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        height: auto;
+    }
+
+    .content-section {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .add-to-cart {
+        width: 100%;
+    }
+}
+@media (max-width:600px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section img{
+        width: 100%;
+        max-height: 200px; 
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .content-section {
+        width: 100%;
+        text-align: left;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .discount-price {
+        font-size: 32px;
+    }
+
+    .original-price {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width:375px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        width: 100%;
+        max-height: 180px;
+        border-radius: 20px;
+    }
+
+    .content-section {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .add-to-cart {
+        width: 100%;
+    }
+}
